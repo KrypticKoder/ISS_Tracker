@@ -10,7 +10,7 @@ print(data["number"])
 print(data)
 
 #ISS Location
-while 1 == 1:
+while 1 == 1: #Uses a simple loop to constantly update the location of the ISS
     time.sleep(1.0) #Delay so response doesn't overflow
     response2 = requests.get("http://api.open-notify.org/iss-now.json") #ISS Information
     data2 = response2.json()
